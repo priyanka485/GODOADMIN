@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GodoAdmin</string>
+
+    <string name="tasksimplified">Task Simplified</string>
+    <string name="fast_str">Fast</string>
+    <string name="easy_str">Easy</string>
+    <string name="smart_str">Smart</string>
+
+    <string name="call_us_now_str">Call Us Now</string>
+    <string name="try_again_str">Try Again</string>
+    <string name="no_connection_str">
+        Problem with internet connection.Please check the internet connection &amp; try again.</string>
+
+    <string name="email_hint_str">Enter Your Email</string>
+    <string name="login_str">Login</string>
+    <string name="reg_str">Register</string>
+
+    <string name="organisation_name">Organisation Name</string>
+    <string name="organisation_email">Organisation Email</string>
+    <string name="license_start_date">License Start Date</string>
+    <string name="license_end_date">License End Date</string>
+    <string name="no_of_license">No Of License</string>
+    <string name="organisation_code">Organisation Code</string>
+    <string name="phone_number"> Phone Number</string>
+    <string name="address"> Address</string>
+
+</resources>

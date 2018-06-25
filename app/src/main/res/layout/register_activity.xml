@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UserName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/driver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/photo"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_organisation_name"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/organisation_name"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_organisation_code"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/organisation_code"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_organisation_email"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/organisation_email"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_phonenumber"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_number"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_license_startdate"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/license_start_date"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_license_endate"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/license_end_date"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_no_license"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/no_of_license"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/address"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="4"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/sw_status"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="4"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:text="Status"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_type"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/userpasslogin"
+                android:gravity="center"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Choose Type" />
+
+
+                <Spinner
+                    android:id="@+id/sp_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/sp_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/down" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/loginbutton"
+                android:text="@string/reg_str"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                app:robotoTypeface="roboto_thin" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/userpasslogin"
+                android:drawableLeft="@drawable/unlock"
+                android:drawablePadding="10dp"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:padding="3dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#898989"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/eye"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/hide" />
+        </FrameLayout>
+
+        <!-- Login Button -->
+
+
+    </RelativeLayout>
+</ScrollView>
